@@ -68,6 +68,6 @@ app.post("/pay", async (req, res) => {
   console.log("base64payload", base64Payload);
 });
 
-app.listen(4000, () => {
-  console.log("Server started on port 4000");
+app.listen(process.env.PORT, () => {
+  console.log("Server started");
 });
